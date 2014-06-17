@@ -12,7 +12,6 @@ LOCAL_SRC_FILES := \
     buffer.c \
     bufferevent.c \
     bufferevent_filter.c \
-    bufferevent_openssl.c \
     bufferevent_pair.c \
     bufferevent_ratelim.c \
     bufferevent_sock.c \
@@ -38,8 +37,7 @@ LOCAL_SRC_FILES := \
 LOCAL_C_INCLUDES := \
     $(LOCAL_PATH) \
     $(LOCAL_PATH)/android \
-    $(LOCAL_PATH)/include \
-    external/openssl/include
+    $(LOCAL_PATH)/include
 
 LOCAL_CFLAGS := -DHAVE_CONFIG_H -DANDROID -fvisibility=hidden
 
